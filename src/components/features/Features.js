@@ -1,11 +1,48 @@
-import React from 'react'
+import React from 'react';
+import "./Features.css";
+import{ BsFillBookmarkStarFill } from "react-icons/bs";
+import phoneFeatures from "../../assets/phone-features.png"
+import Feature from './Feature.js';
+import { featureList } from './data.js';
+
 
 const Features = () => {
   return (
-    <div>
+    <section id="features">
 
-        <h1>Features</h1>
-    </div>
+        <div className="container features">
+           <div className='u-title'>
+              <BsFillBookmarkStarFill color='orangered' size={30}/>
+           <h2>Core Features</h2>
+           <p className='u-text-small u-text-dark'>
+             TenpopX useNote that the development build is not optimized.
+              To create a production build,development build?
+             </p>
+
+          </div>
+
+
+    <div className="features-content">
+          <div className='features-left'>
+            <img src={phoneFeatures} alt="phone" />
+          </div>
+          <div className='features-right'>
+            {
+              featureList.map((feature) =>
+              (<Feature key={feature.id} icon={feature.icon} heading={feature.heading} text={feature.text}/>))
+
+            }
+           
+
+
+
+
+
+          </div>
+        </div>
+
+        </div>
+    </section>
   )
 }
 
