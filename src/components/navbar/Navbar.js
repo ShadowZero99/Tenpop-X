@@ -29,8 +29,8 @@ const Navbar = () => {
 
         <menu>
           <ul className='nav-links' id={showMenu?"nav-links-mobile":"nav-links-mobile-hide"}>
-              <li><a href="#faq">Home</a></li>
-              <li><a href="#faq">Features</a></li>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Features">Features</a></li>
               <li><a href="#faq">Download</a></li>
               <li><a href="#faq">Subcribe</a></li>
               
