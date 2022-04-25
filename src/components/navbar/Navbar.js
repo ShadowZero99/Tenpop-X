@@ -30,9 +30,9 @@ const Navbar = () => {
         <menu>
           <ul className='nav-links' id={showMenu?"nav-links-mobile":"nav-links-mobile-hide"}>
               <li><a href="#Home">Home</a></li>
-              <li><a href="#Features">Features</a></li>
-              <li><a href="#faq">Download</a></li>
-              <li><a href="#faq">Subcribe</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#download">Download</a></li>
+              <li><a href="#subcribe">Subcribe</a></li>
               
               {/*<li className="nav-btn">
                 
@@ -40,7 +40,7 @@ const Navbar = () => {
   btn-dark'>Get Stareted</a></li>*/}
 
   <li className="nav-btn">
-                <Button text={"Get Started"} btnClass={"btn-dark"} href={"#faq"}/>
+                <Button text={"Need help?"} btnClass={"btn-dark"} href={"#faq"}/>
                
               
               </li>

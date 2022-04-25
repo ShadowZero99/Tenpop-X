@@ -1,28 +1,43 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import Button from '../UI/button/Button';
 import "./Header.css";
 import phoneHeader from "../../assets/phone-header-bg.png";
 import "../UI/button/Button.css";
 import  {BsMouse} from "react-icons/bs";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Header = () => {
+
+    useEffect(() =>{
+      AOS.init({
+        duration: 1000,
+
+      });
+    },[])
+
+
   return (
     <section id="header">
         <div className="container header">
-        <div className="header-left">
+        <div className="header-left" data-aos="fade-right">
           <h1>
-            <span>THE WORLD'S LEADING</span>
-            <span>CROSS-PLATFORM SECURE</span>
-            <span>MESSAGING SYSTEM</span>
+            <span>Intelligent website design</span>
+            <span>YoUR WEB APP MUST DELIVER</span>
+            <span> AN AMAZING experience</span>
           </h1>
           <p className='u-text-small u-text-light'>
-            TenpopX is a Lorem ipsum dolor sitamet, consectetur adipisicing elit.
-            obcaThe href attribute requires a valid value to be accessef, but 
-            still need the element to resemble a link.resemble a link
+         Being one of the best web development services providers, we help
+startups, businesses, and other organizations build amazing web
+plotforms and web applications that deliver a 'never-like-before'
+experience to the users. Check out our features to see our web
+development services expertise.
+
           </p>
           <div className="header-cta">
             <Button text={"Learn More"} btnClass={"btn-dark"} href={"#faq"}/>
-            <Button text={"How It Works"} btnClass={"btn-orange"} href={"#faq"}/>
+            <Button text={"How It Works"} btnClass={"btn-orange"} href={"#features"}/>
           </div>
           </div>
 
@@ -30,7 +45,7 @@ const Header = () => {
         
        
       
-        <div className="header-right">
+        <div className="header-right" data-aos="fade-left">
 
 <img src={phoneHeader} alt="phone"/>
 

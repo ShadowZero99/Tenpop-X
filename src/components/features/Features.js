@@ -11,12 +11,11 @@ const Features = () => {
     <section id="features">
 
         <div className="container features">
-           <div className='u-title'>
+           <div className='u-title' data-aos="fade-up">
               <BsFillBookmarkStarFill color='orangered' size={30}/>
            <h2>Core Features</h2>
            <p className='u-text-small u-text-dark'>
-             TenpopX useNote that the development build is not optimized.
-              To create a production build,development build?
+           Why choose us for web development services?
              </p>
 
           </div>
@@ -24,9 +23,9 @@ const Features = () => {
 
     <div className="features-content">
           <div className='features-left'>
-            <img src={phoneFeatures} alt="phone" />
+            <img src={phoneFeatures} alt="phone" data-aos="fade-right"/>
           </div>
-          <div className='features-right'>
+          <div className='features-right'data-aos="fade-left" >
             {
               featureList.map((feature) =>
               (<Feature key={feature.id} icon={feature.icon} heading={feature.heading} text={feature.text}/>))

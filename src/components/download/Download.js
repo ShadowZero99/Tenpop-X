@@ -9,9 +9,9 @@ const Download = () => {
   return (
     <section id="download">
         <div className='container download'>
-          <h2>SOCIALX MESSENGER DOWNLOAD</h2>
+          <h2>Cross-Platform Mobile Development</h2>
           <p className="u-text-small u-text-light">
-          Search for the keywords to learn more about each warning.
+          Native app development eschews the complexity of creating a sustainable product that spans multiple platform app development and focuses on generating a competent design that stays close to the target platform
 
           </p>
 
@@ -22,19 +22,19 @@ const Download = () => {
 
 <div className ="download-icons">
 
-<div className='download-icon'>
+<div className='download-icon' data-aos="flip-left">
 
 <GrAndroid/><p>Android</p>
 
 </div>
 
-<div className='download-icon'>
+<div className='download-icon' data-aos="flip-left">
 
 <FaApple/><p>ios</p>
 
 </div>
 
-<div className='download-icon'>
+<div className='download-icon' data-aos="flip-left">
 
 <FaWindows/><p>Windows</p>
 

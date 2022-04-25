@@ -9,9 +9,9 @@ const Subcribe = () => {
 <section id="subcribe">
 
   <div className='container subscribe'>
-    <h2>Subscribe Now!</h2>
+    <h2 data-aos="zoom-in">Subscribe Now!</h2>
     <form>
-      <div className='form-control'>
+      <div className='form-control'data-aos="fade-right">
         <input type="text" placeholder='enter your Email...'/>
         <button>Subscribe</button>
       </div>
